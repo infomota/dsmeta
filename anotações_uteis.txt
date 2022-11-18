@@ -1,0 +1,22 @@
+*** Git ***
+https://github.com/
+user: paulo_mota25@yahoo.com.br
+senha: ka@503649
+
+Comandos:
+git init
+git status
+git add .
+git commit -m "{comentário}"
+git push heroku master
+
+*** Heroku ***
+https://www.heroku.com/
+user: paulo_mota25@yahoo.com.br
+senha: ka@503649
+
+*** Comando para iniciar a aplicação Web ***
+Acessar o Git Bash Here na pasta frontend
+digitar: yarn dev
+ctrl+c para parar e exit para sair do Git Bash
+
