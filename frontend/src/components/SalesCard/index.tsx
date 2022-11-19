@@ -4,8 +4,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+<<<<<<< HEAD
 import { BASE_URL } from '../../utils/request';
 import { Sale } from '../../models/sale';
+=======
+>>>>>>> 694c03a0207ea254b49c7b6167c710cad489346c
 
 function SalesCard() {
 
@@ -14,12 +17,20 @@ function SalesCard() {
 
     const [minDate, setMindate] = useState(min);
     const [maxDate, setMaxdate] = useState(max);
+<<<<<<< HEAD
     const [sales, setSales] = useState<Sale[]>([]);
 
     useEffect(() => {
         axios.get(`${BASE_URL}/sales`)
             .then(respose => {
                 setSales(respose.data.content);
+=======
+
+    useEffect(() => {
+        axios.get("http://localhost:8080/sales")
+            .then(respose => {
+                console.log(respose.data)
+>>>>>>> 694c03a0207ea254b49c7b6167c710cad489346c
             })
     }, [])
 
