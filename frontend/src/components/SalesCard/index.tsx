@@ -19,7 +19,7 @@ function SalesCard() {
     useEffect(() => {
         axios.get(`${BASE_URL}/sales`)
             .then(respose => {
-                setSales(respose.data.content);
+                setSales(respose.data.content); 
             })
     }, [])
 
